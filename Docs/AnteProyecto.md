@@ -6,7 +6,7 @@
 * [x] Planteamiento del problema: Descripción clara de la situación o falla que se quiere estudiar.
 * [x] Justificación: Razones de por qué es importante y útil hacer el trabajo.
 * [x] Objetivos: Meta general de lo que se espera lograr y metas específicas que ayudan a cumplirla.
-* [ ] Cronograma: Tiempos estimados para cada paso del proyecto.
+* [x] Cronograma: Tiempos estimados para cada paso del proyecto.
 * [ ] Bibliografía: Libros o fuentes que sirven de base.
 
 ---  
@@ -59,6 +59,7 @@ Desarrollar una solución de software para la automatización de procesamiento y
 
 ## Cronograma de Actividades
 
+```mermaid
 gantt
     title Roadmap del producto
     dateFormat YYYY-MM-DD
@@ -88,17 +89,20 @@ gantt
 
     section Frontend
     Mockups                                     :t16, 2026-09-21, 2026-09-24
-    Formulario de ingreso de datos               :t17, 2026-09-24, 2026-09-25
-    Dashboard de visualización                  :t18, after t17, 5d
-    Módulo de reportes                          :t19, after t18, 3d
+    Formulario de ingreso de datos (1)          :t17, 2026-09-24, 2026-09-25
+    Formulario de ingreso de datos (2)          :t18, 2026-09-28, 2026-09-29
+    Dashboard de visualización                  :t19, 2026-09-30, 2026-10-02
+    Módulo de reportes                          :t20, 2026-10-05, 2026-10-07
 
     section CI/CD
-    Build de imágenes Docker y push a registry  :t20, after t19, 2d
-    Pipeline de build y pruebas automatizadas   :t21, after t20, 3d
-    Manifiestos K8s (Deployments, Services, Ingress) :t22, after t21, 2d
-    Pruebas en k3s (Raspberry Pi)                :t23, after t22, 2d
-    Despliegue                                  :t24, after t23, 3d
-    Documentación final                         :t25, after t24, 2d
+    Build de imágenes Docker y push a registry       :t21, 2026-10-08, 2026-10-09
+    Pipeline de build y pruebas automatizadas        :t22, 2026-10-10, 2026-10-12
+    Manifiestos K8s (Deployments, Services, Ingress) :t23, 2026-10-13, 2026-10-14
+    Pruebas en k3s (Raspberry Pi)                    :t24, 2026-10-15, 2026-10-16
+    Despliegue                                       :t25, 2026-10-17, 2026-10-19
+    Documentación final                              :t26, 2026-10-20, 2026-10-23
+```
 
-    section Milestones
-    Sprint 5                                    :milestone, m1, 2026-08-10, 0d
+
+## Bibliografía
+

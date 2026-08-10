@@ -6,7 +6,7 @@
 * [x] Planteamiento del problema: Descripción clara de la situación o falla que se quiere estudiar.
 * [x] Justificación: Razones de por qué es importante y útil hacer el trabajo.
 * [x] Objetivos: Meta general de lo que se espera lograr y metas específicas que ayudan a cumplirla.
-* [ ] Cronograma: Tiempos estimados para cada paso del proyecto.
+* [x] Cronograma: Tiempos estimados para cada paso del proyecto.
 * [ ] Bibliografía: Libros o fuentes que sirven de base.
 
 ---  
@@ -33,6 +33,7 @@ Base de datos donde se almacenan los datos del investigador, reportes, historial
 ---
 
 ## Justificación
+
 El Centro de Investigación de Ingeniería (CII) desempeña un rol fundamental en la generacion de conocimiento cientifico aplicado, particularmente en el área de estudios de la madera, donde los ensayos de eficiencia termica y emisiones constituyen una fuente de datos critica para la evaluación de estufas y procesos de combustión. Sin embargo, la dependencia de procesos manuales para la captura y digitalización de estos datos compromete la calidad e integridad de la información generada, exponiendo al centro a riesgos como pérdida de datos, errores de transcripción y demoras en la disponibilidad de resultados.
 
 La implementación de un sistema de software especializado para la gestión de estos ensayos representa una mejora significativa en la capacidad operativa del CII, al eliminar la duplicidad de esfuerzos entre la captura en campo y su posterior digitalización, reduciendo asi el margen de error humano y asegurando la trazabilidad de los datos desde su origen. Asimismo, contar con una plataforma centralizada permitiria a los investigadores acceder a información historica de manera agíl, generar reportes analíticos de forma automatizada y disponer de datos estandarizados y confiables para la toma de decisiones y la elaboracion de futuras publicaciones o estudios comparativos.
@@ -53,4 +54,55 @@ Desarrollar una solución de software para la automatización de procesamiento y
 * Implementar un módulo de limpieza y estandarización de datos que valide la información ingresada y minimice inconsistencias antes de su procesamiento.
 * Automatizar cálculos en base a los datos obtenidos en los ensayos.
 * Diseñar una base de datos que almacene de forma centralizada el histórico.
+
+--- 
+
+## Cronograma de Actividades
+
+```mermaid
+gantt
+    title Roadmap del producto
+    dateFormat YYYY-MM-DD
+
+    section Documentación
+    RF Y RNF                                    :t1, 2026-08-10, 2026-08-12
+    Stakeholders                                :t2, 2026-08-10, 2026-08-12
+    CDU                                         :t3, 2026-08-13, 2026-08-17
+    Diagrama de despliegue                      :t4, 2026-08-18, 2026-08-19
+    Diagrama de arquitectura                    :t5, 2026-08-19, 2026-08-20
+
+    section Trazabilidad / EAC
+    Matrices de trazabilidad                    :t6, 2026-08-20, 2026-08-21
+    EAC                                         :t7, 2026-08-20, 2026-08-21
+
+    section Base de Datos
+    Definición de tablas                        :t8, 2026-08-24, 2026-08-27
+    Normalización                               :t9, 2026-08-27, 2026-08-28
+    Modelo entidad relación                     :t10, 2026-08-31, 2026-09-02
+    Script DDL                                  :t11, 2026-09-03, 2026-09-05
+
+    section Backend
+    Diseño API / Endpoints                      :t12, 2026-09-08, 2026-09-10
+    Módulo de estandarización y limpieza        :t13, 2026-09-11, 2026-09-13
+    Lógica de cálculo                           :t14, 2026-09-14, 2026-09-17
+    Roles y usuarios                            :t15, 2026-09-17, 2026-09-20
+
+    section Frontend
+    Mockups                                     :t16, 2026-09-21, 2026-09-24
+    Formulario de ingreso de datos (1)          :t17, 2026-09-24, 2026-09-25
+    Formulario de ingreso de datos (2)          :t18, 2026-09-28, 2026-09-29
+    Dashboard de visualización                  :t19, 2026-09-30, 2026-10-02
+    Módulo de reportes                          :t20, 2026-10-05, 2026-10-07
+
+    section CI/CD
+    Build de imágenes Docker y push a registry       :t21, 2026-10-08, 2026-10-09
+    Pipeline de build y pruebas automatizadas        :t22, 2026-10-10, 2026-10-12
+    Manifiestos K8s (Deployments, Services, Ingress) :t23, 2026-10-13, 2026-10-14
+    Pruebas en k3s (Raspberry Pi)                    :t24, 2026-10-15, 2026-10-16
+    Despliegue                                       :t25, 2026-10-17, 2026-10-19
+    Documentación final                              :t26, 2026-10-20, 2026-10-23
+```
+
+
+## Bibliografía
 

@@ -1,4 +1,0 @@
-## Documentacion General
-
-### Requerimientos Funcionales
-

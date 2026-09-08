@@ -58,8 +58,6 @@ gantt
     CDU                                         :t3, 2026-08-13, 2026-08-17
     Diagrama de despliegue                      :t4, 2026-08-18, 2026-08-19
     Diagrama de arquitectura                    :t5, 2026-08-19, 2026-08-20
-
-    section Trazabilidad / EAC
     Matrices de trazabilidad                    :t6, 2026-08-20, 2026-08-21
     EAC                                         :t7, 2026-08-20, 2026-08-21
 

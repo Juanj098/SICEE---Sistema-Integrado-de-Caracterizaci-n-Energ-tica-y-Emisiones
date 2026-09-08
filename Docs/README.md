@@ -32,7 +32,7 @@ Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gesti
 
 |ID        | Categoria      | SubCategoria                     | Escenario | Prioridad |
 |----------|----------------|----------------------------------|-----------|-----------|
-|**EAC-01**| Usabilidad     | Aprendizaje                      | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**          |           |
+|**EAC-01**| Usabilidad     | Aprendizaje                      | **Fuente de estimulos:** Investigador <br> **Estímulo:** Necesita generar una prueba de ebullicion por primera vez <br> **Artefacto:** Modulo de ingreso de datos <br> **Ambiente:** Primera sesion de uso <br> **Respuesta:** El investigador logra realizar la prueba de ebullicion sin problema siendo una interzaz facil de usar <br> **Medida de la respuesta:** Ingresa los datos obtenidos en un tiempo no mayor a 1 minuto |           |
 |**EAC-02**| Eficiencia     | Comportamiento <br> en el tiempo | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
 |**EAC-03**| Mantenibilidad | Facilidad de análisis            | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
 |**EAC-04**| Fiabilidad     | Cumplimiento de <br> Fiabilidad  | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |

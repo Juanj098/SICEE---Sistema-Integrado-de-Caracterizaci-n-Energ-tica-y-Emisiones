@@ -31,12 +31,12 @@ Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gesti
 ---
 
 |ID        | Categoria      | SubCategoria                     | Escenario | Prioridad |
-|----------|----------------|----------------------------------|-----------|-----------|
-|**EAC-01**| <p align="center"> Usabilidad </p>    | Aprendizaje                      | **Fuente de estimulos:** Investigador <br> **Estímulo:** Necesita generar una prueba de ebullicion por primera vez <br> **Artefacto:** Modulo de ingreso de datos <br> **Ambiente:** Primera sesion de uso, sin capacitacion previa. <br> **Respuesta:** El investigador completa el registro guiándose por etiquetas claras y validación en tiempo real, sin necesidad de asistencia externa <br> **Medida de la respuesta:** Completa el ingreso en menos de 1 minuto y sin errores de validación en el primer intento | <p align ="center"> Alta </p> |
-|**EAC-02**| Eficiencia     | Comportamiento <br> en el tiempo | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
-|**EAC-03**| Mantenibilidad | Facilidad de análisis            | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
-|**EAC-04**| Fiabilidad     | Cumplimiento de <br> Fiabilidad  | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
-|**EAC-05**| Eficiencia     | Comportamiendo <br> de recursos  | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
+|----------|----------------|----------------------|-----------|-----------|
+|**EAC-01**| <p align="center"> Usabilidad </p>    | Aprendizaje | **Fuente de estimulos:** Investigador <br> **Estímulo:** Necesita generar una prueba de ebullicion por primera vez <br> **Artefacto:** Modulo de ingreso de datos <br> **Ambiente:** Primera sesion de uso, sin capacitacion previa. <br> **Respuesta:** El investigador completa el registro guiándose por etiquetas claras y validación en tiempo real, sin necesidad de asistencia externa <br> **Medida de la respuesta:** Completa el ingreso en menos de 1 minuto y sin errores de validación en el primer intento | <p align ="center"> Alta </p> |
+|**EAC-02**| <p align="center"> Eficiencia <p> | Comportamiento <br> en el tiempo | **Fuente de estimulos:** Jefe de sección <br> **Estímulo:** Revisar resultados de pruebas anteriores  <br> **Artefacto:** Módulo de consulta de historial de pruebas <br> **Ambiente:** Operacion normal del sistema <br> **Respuesta:** Mostrar el listado de pruebas anteriores, Hasta 500 registros almacenados. Ordenados por fecha de realizacion. <br> **Medida de la respuesta:** En menos de 3 segundos. | <p align="center"> Alta </p>  |
+|**EAC-03**| <p align="center"> Mantenibilidad </p> | Facilidad de análisis            | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
+|**EAC-04**| <p align="center"> Fiabilidad </p> | Cumplimiento de <br> Fiabilidad  | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
+|**EAC-05**| <p align="center"> Eficiencia </p> | Comportamiendo <br> de recursos  | **Fuente de estimulos:** <br> **Estímulo:**  <br> **Artefacto:** <br> **Respuesta:**  <br> **Medida de la respuesta:**            |           |
 
 
 ## Requerimientos Funcionales y No funcionales

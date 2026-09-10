@@ -1,22 +1,10 @@
-# **AnteProyecto**
-
----
-
-* [x] Título tentativo: Nombre corto que dice qué se va a hacer.
-* [x] Planteamiento del problema: Descripción clara de la situación o falla que se quiere estudiar.
-* [x] Justificación: Razones de por qué es importante y útil hacer el trabajo.
-* [x] Objetivos: Meta general de lo que se espera lograr y metas específicas que ayudan a cumplirla.
-* [x] Cronograma: Tiempos estimados para cada paso del proyecto.
-* [ ] Bibliografía: Libros o fuentes que sirven de base.
-
----  
-
 # **SICEE: Sistema Integrado de Caracterización Energetica y Emisiones**
 
 ## Descripcion del Problema
 
 #### Planteamiento del Problema
-En la actualidad, el Centro de Investigación de Ingeniería (CII), específicamente en el área de estudios de la madera, lleva a cabo evaluaciones en entornos controlados utilizando estufas para medir la eficiencia térmica y el nivel de emisiones generadas. Sin embargo, la captura de los datos experimentales (como temperatura, tiempo y gases) se realiza de forma completamente manual, para su posterior digitalizacion en hojas de cálculo de Excel. Lo que da lugar a cometer errores humanos por digitalización o perdida de datos durante las pruebas realizadas, asi mismo la falta de una plataforma centralizada impide la visualización de variables en tiempo real, retrasa la generación de reportes analíticos y limita el procesamiento inmediato de grandes volúmenes de información; restando agilidad a los procesos de investigación del centro.
+
+En la actualidad en la seccion de tecnologia de la madera la cual forma parte del centro de investigacion de ingenieria (CII), cuenta con un laboratorio para la caracterización de estufas, donde lleva a cabo evaluaciones en entornos controlados utilizando estufas para medir la eficiencia térmica y el nivel de emisiones generadas. Sin embargo, la captura de los datos experimentales (como temperatura, tiempo y gases) se realiza de forma completamente manual, para su posterior digitalizacion en hojas de cálculo de Excel. Lo que da lugar a cometer errores humanos por digitalización o perdida de datos durante las pruebas realizadas, asi mismo la falta de una plataforma centralizada impide la visualización de variables en tiempo real, retrasa la generación de reportes analíticos y limita el procesamiento inmediato de grandes volúmenes de información; restando agilidad a los procesos de investigación del centro.
 
 #### Descripcion de la Solución del Problema
 Se propone realizar un sistema de software de automatización para la adquisición, almacenamiento y procesamiento de datos generados en los ensayos. Esta solución ayudara en la optimización de tiempo de ánalisis, garantizara la integridad de los resultados científicos y permitira al departamento contar con un historico digital confiable para futuros estudios. 
@@ -70,8 +58,6 @@ gantt
     CDU                                         :t3, 2026-08-13, 2026-08-17
     Diagrama de despliegue                      :t4, 2026-08-18, 2026-08-19
     Diagrama de arquitectura                    :t5, 2026-08-19, 2026-08-20
-
-    section Trazabilidad / EAC
     Matrices de trazabilidad                    :t6, 2026-08-20, 2026-08-21
     EAC                                         :t7, 2026-08-20, 2026-08-21
 
@@ -106,3 +92,5 @@ gantt
 
 ## Bibliografía
 
+Alianza Mundial para Estufas Limpias. (2014). Prueba de ebullición de agua (WBT versión 4.2.3). 
+    http://www.cleancookstoves.org/our-work/standards-and-testing/learn-about-testing-protocols/

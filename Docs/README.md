@@ -27,6 +27,10 @@ Entre su cartera de clientes se encuentran empresas reconocidas del sector indus
 
 Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gestionan de manera manual, principalmente mediante hojas de cálculo (Excel), lo que genera limitaciones en cuanto a trazabilidad, estandarización de resultados, generación de reportes y explotación posterior de los datos recolectados. Esto representa una oportunidad para el desarrollo de una plataforma que digitalice y sistematice dicho flujo de trabajo, mejorando la calidad, consistencia y disponibilidad de la información generada por el área de Tecnología de la Madera.
 
+**Diagrama de Contexto**
+
+![ctx](./img/dCtx.png)
+
 ## Drivers de calidad
 ---
 
@@ -43,9 +47,29 @@ Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gesti
 ## Requerimientos Funcionales y No funcionales
 ---
 
-**RF**
+**Requerimientos Funcionales**
+
+| ID        | Descripcion | Prioridad |
+|-----------|-------------|-----------|
+| **RF-01** | El sistema debe permitir al investigador registrar los datos de una prueba de ebullicion (WBT). | Alta |
+| **RF-02** | El sistema debe permitir la visualizacion el historial de pruebas realizadas con anterioridad. | Alta |
+| **RF-03** | El sistema debe permitir generar reportes en formato pdf de las pruebas realizadas. | Alta |
+| **RF-04** | El sistema debe permitir ingresar datos de investigador. | Media |
+| **RF-05** | El sistema debe permitir generar graficas dependiendo de las lecturas|  |  
+
+**Requerimientos No Funcionales**
+
+| ID         | Descripcion | Prioridad |
+|------------|-----------|-------------|
+| **RNF-01** | El sistema debe estar disponible durante horario normal de labores ( de 8 a 16 hrs.)| Alta |
+| **RNF-02** | El sistema debe mostrar el historial en un tiempo no mayor a 3 segundos | Media |
+| **RNF-03** | El sistema debe permitir reintentar la generación de un reporte en menos de 30 segundos tras una interrupción| Media |
 
 
-**RNF**
+## Casos de Uso
+---
 
-  
+#### **Casos de Uso de Alto Nivel**
+![cdu alto nivel](./img/CDU_Alto.png)
+
+

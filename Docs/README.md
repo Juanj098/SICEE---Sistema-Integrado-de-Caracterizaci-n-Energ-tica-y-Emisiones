@@ -79,11 +79,77 @@ Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gesti
 ### CDU 1: Registrar prueba WBT
 ![cdu_1](./img/cdu1.png)
 
+<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%">
+  <tr><td width="20%">Nombre</td><td>Registrar prueba WBT</td></tr>
+  <tr><td>Actor</td><td>Investigador</td></tr>
+  <tr><td>Propósito</td><td>Registrar los datos necesarios para preparar una prueba WBT.</td></tr>
+  <tr><td>Precondición</td><td>El investigador se encuentra en el formulario de registro.</td></tr>
+  <tr><td>Disparador</td><td>El investigador selecciona «Registrar prueba WBT».</td></tr>
+  <tr><td colspan="2"><b>Resumen:</b> El investigador ingresa la información de la prueba y presiona «Guardar». El sistema valida los datos y registra la prueba si la información es correcta.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>CURSO NORMAL DE EVENTOS</b></td></tr>
+  <tr style="background:#eeeeee"><th width="30%">Acción del actor</th><th>Respuesta del sistema</th></tr>
+  <tr><td valign="top">1. Ingresa los datos del investigador, la estufa, el combustible y las condiciones ambientales.</td><td>2. El sistema muestra el formulario y permite completar la información.</td></tr>
+  <tr><td valign="top">3. Presiona «Guardar».</td><td>4. El sistema valida los datos.<br>5. El sistema guarda la prueba.<br>6. El sistema confirma que la prueba fue registrada.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>FLUJOS ALTERNATIVOS</b></td></tr>
+  <tr><td valign="top">3a. El investigador ingresa datos faltantes o inválidos.</td><td>4a. El sistema muestra los errores y no guarda la prueba.<br>5a. El investigador corrige la información y vuelve a presionar «Guardar».</td></tr>
+  <tr><td colspan="2"><b>Postcondición:</b> La prueba queda registrada y disponible para su ejecución.</td></tr>
+</table>
+
 ### CDU 2: Ejecutar Prueba WBT
 ![cdu_2](./img/cdu2.png)
+
+<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%">
+  <tr><td width="20%">Nombre</td><td>Ejecutar prueba WBT</td></tr>
+  <tr><td>Actor</td><td>Investigador</td></tr>
+  <tr><td>Propósito</td><td>Ejecutar las fases de la prueba y registrar sus mediciones.</td></tr>
+  <tr><td>Precondición</td><td>La prueba fue registrada y validada.</td></tr>
+  <tr><td>Disparador</td><td>El investigador selecciona «Iniciar prueba».</td></tr>
+  <tr><td colspan="2"><b>Resumen:</b> El investigador ejecuta las tres fases del WBT. Al finalizar, el sistema valida las mediciones y procesa los resultados.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>CURSO NORMAL DE EVENTOS</b></td></tr>
+  <tr style="background:#eeeeee"><th width="30%">Acción del actor</th><th>Respuesta del sistema</th></tr>
+  <tr><td valign="top">1. Selecciona «Iniciar prueba».</td><td>2. El sistema verifica la configuración de la prueba y habilita el registro de mediciones.</td></tr>
+  <tr><td valign="top">3. Registra la fase de inicio frío.<br>4. Registra la fase de inicio caliente.<br>5. Registra la fase de baja potencia.<br>6. Selecciona «Finalizar prueba».</td><td>7. El sistema valida las mediciones.<br>8. El sistema procesa los resultados.<br>9. El sistema confirma la finalización de la prueba.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>FLUJOS ALTERNATIVOS</b></td></tr>
+  <tr><td valign="top">3a. El investigador omite una medición o registra una fase inválida.</td><td>7a. El sistema muestra una advertencia y solicita completar o corregir los datos.</td></tr>
+  <tr><td colspan="2"><b>Postcondición:</b> La prueba queda finalizada y sus resultados procesados, o marcada como incompleta o inválida.</td></tr>
+</table>
 
 ### CDU 3: Generacion de Reportes
 ![cdu_3](./img/cdu3.png)
 
+<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%">
+  <tr><td width="20%">Nombre</td><td>Generar reporte PDF</td></tr>
+  <tr><td>Actor</td><td>Investigador</td></tr>
+  <tr><td>Propósito</td><td>Generar un reporte PDF con los datos y resultados de una prueba.</td></tr>
+  <tr><td>Precondición</td><td>La prueba seleccionada está finalizada y tiene resultados procesados.</td></tr>
+  <tr><td>Disparador</td><td>El investigador selecciona «Generar reporte».</td></tr>
+  <tr><td colspan="2"><b>Resumen:</b> El sistema reúne los datos de la prueba, sus resultados y gráficas, y genera un reporte PDF para el investigador.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>CURSO NORMAL DE EVENTOS</b></td></tr>
+  <tr style="background:#eeeeee"><th width="30%">Acción del actor</th><th>Respuesta del sistema</th></tr>
+  <tr><td valign="top">1. Selecciona «Generar reporte» para una prueba.</td><td>2. El sistema valida que la prueba esté finalizada y tenga resultados procesados.</td></tr>
+  <tr><td valign="top">3. Visualiza o descarga el reporte.</td><td>4. El sistema consulta los datos y resultados.<br>5. Incluye las gráficas.<br>6. Genera el archivo PDF.<br>7. Muestra el reporte disponible para visualización o descarga.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>FLUJOS ALTERNATIVOS</b></td></tr>
+  <tr><td valign="top">2a. La prueba está incompleta o no tiene resultados procesados.</td><td>3a. El sistema informa que no es posible generar el reporte.</td></tr>
+  <tr><td valign="top">6a. Ocurre un error durante la generación.</td><td>7a. El sistema informa el error y permite reintentar.</td></tr>
+  <tr><td colspan="2"><b>Postcondición:</b> El reporte PDF queda generado para su visualización o descarga.</td></tr>
+</table>
+
+
 ### CDU 4: Consultar Historial
 ![cdu_4](./img/cdu4.png)
+
+<table border="1" cellpadding="6" style="border-collapse:collapse; width:100%">
+  <tr><td width="20%">Nombre</td><td>Consultar historial de pruebas</td></tr>
+  <tr><td>Actor</td><td>Investigador</td></tr>
+  <tr><td>Propósito</td><td>Consultar pruebas registradas y visualizar su información.</td></tr>
+  <tr><td>Precondición</td><td>El sistema está disponible.</td></tr>
+  <tr><td>Disparador</td><td>El investigador accede al historial.</td></tr>
+  <tr><td colspan="2"><b>Resumen:</b> El investigador consulta el historial, filtra las pruebas y selecciona una para visualizar sus datos, resultados y opciones disponibles.</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>CURSO NORMAL DE EVENTOS</b></td></tr>
+  <tr style="background:#eeeeee"><th width="30%">Acción del actor</th><th>Respuesta del sistema</th></tr>
+  <tr><td valign="top">1. Accede al historial.</td><td>2. El sistema muestra las pruebas registradas.</td></tr>
+  <tr><td valign="top">3. Busca o filtra por fecha, estufa o investigador.<br>4. Selecciona una prueba.</td><td>5. El sistema muestra el detalle, resultados y gráficas.<br>6. El sistema muestra las opciones «Generar reporte», «Editar» y «Eliminar».</td></tr>
+  <tr><td colspan="2" style="background:#d9d9d9"><b>FLUJOS ALTERNATIVOS</b></td></tr>
+  <tr><td valign="top">3a. Aplica filtros sin resultados.</td><td>5a. El sistema informa que no se encontraron pruebas.</td></tr>
+  <tr><td colspan="2"><b>Postcondición:</b> El investigador visualiza la información de la prueba seleccionada.</td></tr>
+</table>

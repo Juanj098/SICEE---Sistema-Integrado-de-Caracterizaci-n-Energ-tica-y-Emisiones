@@ -54,11 +54,9 @@ gantt
 
     section Documentación
     RF Y RNF                                    :t1, 2026-08-10, 2026-08-12
-    Stakeholders                                :t2, 2026-08-10, 2026-08-12
     CDU                                         :t3, 2026-08-13, 2026-08-17
     Diagrama de despliegue                      :t4, 2026-08-18, 2026-08-19
     Diagrama de arquitectura                    :t5, 2026-08-19, 2026-08-20
-    Matrices de trazabilidad                    :t6, 2026-08-20, 2026-08-21
     EAC                                         :t7, 2026-08-20, 2026-08-21
 
     section Base de Datos
@@ -71,7 +69,6 @@ gantt
     Diseño API / Endpoints                      :t12, 2026-09-08, 2026-09-10
     Módulo de estandarización y limpieza        :t13, 2026-09-11, 2026-09-13
     Lógica de cálculo                           :t14, 2026-09-14, 2026-09-17
-    Roles y usuarios                            :t15, 2026-09-17, 2026-09-20
 
     section Frontend
     Mockups                                     :t16, 2026-09-21, 2026-09-24

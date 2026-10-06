@@ -153,3 +153,18 @@ Actualmente, este tipo de ensayos —eficiencia térmica y emisiones— se gesti
   <tr><td valign="top">3a. Aplica filtros sin resultados.</td><td>5a. El sistema informa que no se encontraron pruebas.</td></tr>
   <tr><td colspan="2"><b>Postcondición:</b> El investigador visualiza la información de la prueba seleccionada.</td></tr>
 </table>
+
+
+## Diseño Tecnico del Sitema
+---
+
+#### Decisión Arquitectónica: 
+El sistema utilizará una arquitectura **monolitica modular**, implementada con Flask como API, PostgreSQL, como base de datos y modulos independientes para pruebas WBT, validacion, cálculos, historial y reportes.
+
+### Diagrama de Arquitectura < Monolito Modular >
+
+![D_Arquitectura](./img/DArqui.png)
+
+### Diagrama de Despliegue
+
+![D_Despliegue](./img/D_deploy.png)
